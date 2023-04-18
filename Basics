@@ -1,4 +1,16 @@
-Kubernetes is ano rchestration tool for managing Containers(docker)
+Kubernetes is an orchestration tool for managing Containers(docker)
+
+Master Node:
+kube api-server->interacts kubelet
+scheduler
+etcd
+controlller manager
+
+Worker Node:
+kubelet
+kube-proxy
+containers in pods
+
 Imp objects:
 Pods-- group of conainers which share netwrok & storage, Allow abstraction, can be scaled up & down
 Service
