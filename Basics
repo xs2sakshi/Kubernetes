@@ -1,0 +1,23 @@
+Kubernetes is ano rchestration tool for managing Containers(docker)
+Imp objects:
+Pods-- group of conainers which share netwrok & storage, Allow abstraction, can be scaled up & down
+Service
+Namespace
+Volumes
+Controller Manager:- Deployment ,Relication, Job, Daemon set
+
+Configuration file: defines the image , YAML
+apiVersion
+kind:Pod
+name:pod-1
+labels
+name:pod-1
+spec:
+contaniers:
+  -name: server
+image: 
+ports:
+  -container port:
+  -name:client
+image:
+
