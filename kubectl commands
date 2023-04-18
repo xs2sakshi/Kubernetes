@@ -1,0 +1,11 @@
+kubectl->kube-API server (via a RESTAPI)->kube scheduler (finds a node)->api-server(dispatches the task to node)
+
+
+kubectl create -f pod-2conatainers-do-one.yaml
+kubecl get pod -o wide-> returns Name,Status,Ready,IP,Node name
+kubectl describe pod pod-1
+docker ps | grep -E "ID|pod-1"  
+
+Go inside a contanier:-
+kubectl exec -it pod-1 -c client bash 
+kubectl exec -it pod-1 -c server bash
